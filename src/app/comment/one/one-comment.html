@@ -1,0 +1,27 @@
+<div class="comment" [ngClass]="{text: !comment.isVideo, highlighted: comment.highlight}">
+    <div class="time" *ngIf="comment.isVideo">{{ comment.time | secondsToTime }}</div>
+    <div class="text-section">
+        <img class="avatar" [src]="comment.user.picture">
+        <span class="badge">{{ comment.pointNumber }}</span>
+        <span *ngIf="comment.content">{{ comment.content }}</span>
+        <input [(ngModel)]="content" *ngIf="!comment.content">
+    </div>
+    <div class="rating-section">
+        <label>Rate</label>
+        <div class="rating-range">
+            <div class="rating-bubble pos-{{comment.rate}}">{{comment.rate}}</div>
+            <input class="slider" type="range" max="10" min="0" [(ngModel)]="comment.rate">
+            <input type="range" max="10" min="0" [(ngModel)]="comment.rate">
+        </div>
+    </div>
+    <div class="verdict-section">
+        <label>Verdict</label>
+        <div class="icons">
+            <div class="thumb up"></div>
+            <div class="thumb left"></div>
+            <div class="thumb down"></div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-sx" *ngIf="comment.content">Reply</button>
+    <button type="button" class="btn btn-sx" *ngIf="!comment.content" (click)="fillCommentContent()">Submit</button>
+</div>

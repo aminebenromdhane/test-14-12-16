@@ -1,0 +1,9 @@
+.content,
+.content > div {
+    height: 100%
+}
+
+.question {
+    padding: 150px 90px 0 100px;
+    font-size: 12px;
+}

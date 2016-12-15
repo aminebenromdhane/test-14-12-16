@@ -1,0 +1,16 @@
+<div class="row question-content">
+  <div class="col-md-6 question">
+    <div *ngFor="let htmlContent of question.htmlContent; let i = index" (dblclick)="addComment(i + 1)" (click)="question.selectComments(i + 1, false)" class="question-container">
+      <span [innerHTML]="htmlContent.content"></span>
+      <span *ngIf="question.positionIsInHTMLComments(i + 1)" [ngClass]="{highlight: htmlContent.highlight}" class="badge">{{ i + 1 }}</span>
+    </div>
+  </div>
+  <div class="col-md-6 video-container">
+    <video width="450" #videoplayer [src]="question.videoUrl" controls>
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="badge-container" *ngIf="videoDuration">
+      <span class="badge" *ngFor="let component of question.videoComponents" [style.left]="(component.time / videoDuration) * 120 + 'px'" (click)="question.selectComments(component.index, true)" [ngClass]="{invisibile: !component.visible, highlight: component.highlight}">{{ component.index }}</span>
+    </div>
+  </div>
+</div>

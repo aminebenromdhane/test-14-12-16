@@ -1,0 +1,7 @@
+.comments-section {
+	  height: 100%;
+    background: #fcfcfc;
+    padding: 100px 40px 150px 15px;
+    margin-left: -15px;
+    overflow: scroll;
+}

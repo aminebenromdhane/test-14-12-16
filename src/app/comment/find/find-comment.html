@@ -1,0 +1,5 @@
+<div class="comments-section">
+  <div *ngFor="let comment of question.comments">
+    <one-comment [comment]="comment" (click)="question.selectComponent(comment)"></one-comment>
+  </div>
+</div>

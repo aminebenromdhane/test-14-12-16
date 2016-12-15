@@ -1,0 +1,337 @@
+.comment {
+    background: #ffffff;
+    border: 1px solid #f0f1f5;
+    position: relative;
+    padding: 12px 10px;
+    margin-bottom: 10px;
+}
+
+.time {
+    position: absolute;
+    background: #e9beb8;
+    right: 0;
+    top: 0;
+    font-size: 10px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 2px 8px;
+}
+
+.text-section {
+    font-size: 12px;
+    margin: 3px 0 10px;
+}
+
+.avatar {
+    height: 34px;
+    width: 34px;
+    margin-right: 3px;
+    border-radius: 50%;
+}
+
+.badge {
+    min-width: 20px;
+    padding: 4px 7px !important;
+    background: #e9beb8;
+    margin: 0 5px;
+}
+
+.rating-section {
+    margin-bottom: 5px
+}
+
+.rating-section,
+.verdict-section {
+    margin-left: 8px;
+}
+
+.comment label {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.icons {
+    display: inline-block;
+    vertical-align: sub;
+    margin-left: 8px;
+}
+
+.thumb {
+    margin-right: 8px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDMyIDMyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMiAzMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8Zz4KCTxnIGlkPSJsaWtlIj4KCQk8cGF0aCBkPSJNMjkuMTY0LDEwLjQ3MmMtMS4yNS0wLjMyOC00LjE4OS0wLjMyNC04LjQ4OC0wLjQzOGMwLjIwMy0wLjkzOCwwLjI1LTEuNzg0LDAuMjUtMy4yODYgICAgQzIwLjkyNiwzLjE2LDE4LjMxMiwwLDE2LDBjLTEuNjMzLDAtMi45NzksMS4zMzUtMywyLjk3N2MtMC4wMjIsMi4wMTQtMC42NDUsNS40OTItNCw3LjI1NmMtMC4yNDYsMC4xMy0wLjk1LDAuNDc3LTEuMDUzLDAuNTIyICAgIEw4LDEwLjhDNy40NzUsMTAuMzQ3LDYuNzQ3LDEwLDYsMTBIM2MtMS42NTQsMC0zLDEuMzQ2LTMsM3YxNmMwLDEuNjU0LDEuMzQ2LDMsMywzaDNjMS4xOSwwLDIuMTg2LTAuNzE5LDIuNjY4LTEuNzI3ICAgIGMwLjAxMiwwLjAwNCwwLjAzMywwLjAxLDAuMDQ3LDAuMDEyYzAuMDY2LDAuMDE4LDAuMTQ0LDAuMDM3LDAuMjM5LDAuMDYyQzguOTcyLDMwLjM1Miw4Ljk4MSwzMC4zNTQsOSwzMC4zNTkgICAgYzAuNTc2LDAuMTQzLDEuNjg1LDAuNDA4LDQuMDU1LDAuOTUzQzEzLjU2MywzMS40MjgsMTYuMjQ3LDMyLDE5LjAyNywzMmg1LjQ2N2MxLjY2NiwwLDIuODY3LTAuNjQxLDMuNTgyLTEuOTI4ICAgIGMwLjAxLTAuMDIsMC4yNC0wLjQ2OSwwLjQyOC0xLjA3NmMwLjE0MS0wLjQ1NywwLjE5My0xLjEwNCwwLjAyMy0xLjc2YzEuMDc0LTAuNzM4LDEuNDItMS44NTQsMS42NDUtMi41OCAgICBjMC4zNzctMS4xOTEsMC4yNjQtMi4wODYsMC4wMDItMi43MjdjMC42MDQtMC41NywxLjExOS0xLjQzOSwxLjMzNi0yLjc2NmMwLjEzNS0wLjgyMi0wLjAxLTEuNjY4LTAuMzg5LTIuMzcyICAgIGMwLjU2Ni0wLjYzNiwwLjgyNC0xLjQzNiwwLjg1NC0yLjE3NmwwLjAxMi0wLjIwOWMwLjAwNy0wLjEzMSwwLjAxMy0wLjIxMiwwLjAxMy0wLjVDMzIsMTIuNjQzLDMxLjEyNSwxMS4wMzIsMjkuMTY0LDEwLjQ3MnogICAgIE03LDI5YzAsMC41NTMtMC40NDcsMS0xLDFIM2MtMC41NTMsMC0xLTAuNDQ3LTEtMVYxM2MwLTAuNTUzLDAuNDQ3LTEsMS0xaDNjMC41NTMsMCwxLDAuNDQ3LDEsMVYyOXogTTI5Ljk3NywxNC41MzUgICAgQzI5Ljk1NywxNS4wMjksMjkuNzUsMTYsMjgsMTZjLTEuNSwwLTIsMC0yLDBjLTAuMjc3LDAtMC41LDAuMjI0LTAuNSwwLjVTMjUuNzIzLDE3LDI2LDE3YzAsMCwwLjQzOCwwLDEuOTM4LDAgICAgczEuNjk3LDEuMjQ0LDEuNiwxLjg0NEMyOS40MTQsMTkuNTksMjkuMDY0LDIxLDI3LjM3NSwyMUMyNS42ODgsMjEsMjUsMjEsMjUsMjFjLTAuMjc3LDAtMC41LDAuMjIzLTAuNSwwLjUgICAgYzAsMC4yNzUsMC4yMjMsMC41LDAuNSwwLjVjMCwwLDEuMTg4LDAsMS45NjksMGMxLjY4OCwwLDEuNTM5LDEuMjg3LDEuMjk3LDIuMDU1QzI3Ljk0NywyNS4wNjQsMjcuNzUyLDI2LDI1LjYyNSwyNiAgICBjLTAuNzE5LDAtMS42MzEsMC0xLjYzMSwwYy0wLjI3NywwLTAuNSwwLjIyMy0wLjUsMC41YzAsMC4yNzUsMC4yMjMsMC41LDAuNSwwLjVjMCwwLDAuNjkzLDAsMS41NjgsMCAgICBjMS4wOTQsMCwxLjE0NSwxLjAzNSwxLjAzMSwxLjQwNmMtMC4xMjUsMC40MDYtMC4yNzMsMC43MDctMC4yNzksMC43MjFDMjYuMDEyLDI5LjY3MiwyNS41MjUsMzAsMjQuNDk0LDMwaC01LjQ2NyAgICBjLTIuNzQ2LDAtNS40Ny0wLjYyMy01LjU0LTAuNjM5Yy00LjE1NC0wLjk1Ny00LjM3My0xLjAzMS00LjYzNC0xLjEwNWMwLDAtMC44NDYtMC4xNDMtMC44NDYtMC44ODFMOCwxMy41NjMgICAgYzAtMC40NjksMC4yOTktMC44OTMsMC43OTQtMS4wNDJDOC44NTYsMTIuNDk3LDguOTQsMTIuNDcxLDksMTIuNDQ2YzQuNTY4LTEuODkyLDUuOTU5LTYuMDQsNi05LjQ0NmMwLjAwNi0wLjQ3OSwwLjM3NS0xLDEtMSAgICBjMS4wNTcsMCwyLjkyNiwyLjEyMiwyLjkyNiw0Ljc0OEMxOC45MjYsOS4xMTksMTguODMsOS41MjksMTgsMTJjMTAsMCw5LjkzLDAuMTQ0LDEwLjgxMiwwLjM3NSAgICBDMjkuOTA2LDEyLjY4OCwzMCwxMy41OTQsMzAsMTMuOTA2QzMwLDE0LjI0OSwyOS45OSwxNC4xOTksMjkuOTc3LDE0LjUzNXoiIGZpbGw9IiNkZGRkZGQiLz4KCQk8cGF0aCBkPSJNNC41LDI2QzMuNjcyLDI2LDMsMjYuNjcyLDMsMjcuNVMzLjY3MiwyOSw0LjUsMjlTNiwyOC4zMjgsNiwyNy41UzUuMzI4LDI2LDQuNSwyNnogTTQuNSwyOCAgICBDNC4yMjUsMjgsNCwyNy43NzUsNCwyNy41UzQuMjI1LDI3LDQuNSwyN1M1LDI3LjIyNSw1LDI3LjVTNC43NzUsMjgsNC41LDI4eiIgZmlsbD0iI2RkZGRkZCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);
+}
+
+.thumb.down {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.thumb.left {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.comment button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #dfada6;
+    border-color: #e09b92;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-size: 10px;
+    padding: 3px 8px;
+    margin: 10px 15px;
+}
+
+.comment button:hover {
+    background: #e09b92;
+    color: #ffffff;
+}
+
+.comment.text .time {
+    display: none;
+}
+
+.comment.text .badge {
+    background: #637a8e;
+}
+
+.comment.text button {
+    background: #637a8e;
+    border-color: #637a8e;
+    padding: 5px 10px;
+    margin: 8px 13px;
+    font-weight: 500;
+}
+
+.comment.highlighted {
+    border-color: #aaa;
+    font-weight: 500;
+}
+
+.comment.highlighted .time {
+    background: #dc877c;
+}
+
+.comment.highlighted .badge {
+    background: #dc877c;
+}
+
+.comment.text.highlighted .badge {
+    background: #637a8e;
+}
+
+.rating-range {
+    vertical-align: middle;
+    width: 210px;
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+}
+
+.rating-bubble {
+    position: absolute;
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: 600;
+    padding: 0 6px;
+    // cursor: pointer;
+    -webkit-user-select: none;
+    /* Chrome/Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+ */
+    cursor: pointer;
+    z-index: 1;
+}
+
+.rating-range:hover .rating-bubble {
+    display: none;
+}
+
+.rating-bubble.pos-1 {
+    left: 19px;
+}
+
+.rating-bubble.pos-2 {
+    left: 39px;
+}
+
+.rating-bubble.pos-3 {
+    left: 57px;
+}
+
+.rating-bubble.pos-4 {
+    left: 76px;
+}
+
+.rating-bubble.pos-5 {
+    left: 95px;
+}
+
+.rating-bubble.pos-6 {
+    left: 114px;
+}
+
+.rating-bubble.pos-7 {
+    left: 134px;
+}
+
+.rating-bubble.pos-8 {
+    left: 152px;
+}
+
+.rating-bubble.pos-9 {
+    left: 172px;
+}
+
+.rating-bubble.pos-10 {
+    left: 187px;
+}
+
+
+/*====================================
+=            Custom range            =
+====================================*/
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 8.5px 0;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    box-shadow: 1px 1px 0px rgba(0, 18, 0, 0), 0px 0px 1px rgba(0, 44, 0, 0);
+    background: #ebedf2;
+    border-radius: 0px;
+    border: 0px solid rgba(1, 1, 1, 0);
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+    border: 3px solid #dfada6;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8.5px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ebedf2;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    box-shadow: 1px 1px 0px rgba(0, 18, 0, 0), 0px 0px 1px rgba(0, 44, 0, 0);
+    background: #ebedf2;
+    border-radius: 0px;
+    border: 0px solid rgba(1, 1, 1, 0);
+}
+
+input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+    border: 3px solid #ebedf2;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #ebedf2;
+    border: 0px solid rgba(1, 1, 1, 0);
+    border-radius: 0px;
+    box-shadow: 1px 1px 0px rgba(0, 18, 0, 0), 0px 0px 1px rgba(0, 44, 0, 0);
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #ebedf2;
+    border: 0px solid rgba(1, 1, 1, 0);
+    border-radius: 0px;
+    box-shadow: 1px 1px 0px rgba(0, 18, 0, 0), 0px 0px 1px rgba(0, 44, 0, 0);
+}
+
+input[type=range]::-ms-thumb {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+    border: 3px solid #ebedf2;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    cursor: pointer;
+    height: 3px;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #ebedf2;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #ebedf2;
+}
+
+input[type='range'].slider {
+    overflow: hidden;
+    position: absolute;
+}
+
+input[type='range'].slider::-webkit-slider-thumb {
+    box-shadow: -180px 0 0 180px #dfada6;
+}
+
+.rating-range:hover input[type='range']::-webkit-slider-thumb {
+    background: #dc6151;
+    border-color: #dc6151;
+}
+
+.text .rating-range:hover input[type='range']::-webkit-slider-thumb {
+    background: #244e73;
+    border-color: #244e73;
+}
+
+.text input[type='range'].slider::-webkit-slider-thumb {
+    box-shadow: -180px 0 0 180px #637a8e;
+}
+
+.text input[type=range]::-webkit-slider-thumb {
+    border-color: #637a8e;
+}
+
+
+/*=====  End of Custom range  ======*/
